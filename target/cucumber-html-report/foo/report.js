@@ -7,7 +7,7 @@ formatter.feature({
   "line": 1
 });
 formatter.before({
-  "duration": 71121,
+  "duration": 72791,
   "status": "passed"
 });
 formatter.scenario({
@@ -36,24 +36,26 @@ formatter.step({
 formatter.match({
   "location": "GoogleSearchFeature.The_search_is_Hello_World()"
 });
-formatter.write("This goes into the report");
+formatter.write("img - 1");
+formatter.embedding("image/png", "embedded0.png");
 formatter.result({
-  "duration": 8356173033,
+  "duration": 14620633663,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchFeature.The_Search_is_performed()"
 });
-formatter.embedding("image/png", "embedded0.png");
+formatter.embedding("image/png", "embedded1.png");
 formatter.result({
-  "duration": 1056039772,
+  "duration": 1286657231,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchFeature.The_browser_title_should_have_Hello_World()"
 });
+formatter.embedding("image/png", "embedded2.png");
 formatter.result({
-  "duration": 952240044,
+  "duration": 2115057300,
   "status": "passed"
 });
 });
