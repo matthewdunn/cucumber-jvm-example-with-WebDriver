@@ -1,0 +1,58 @@
+[
+  {
+    "id": "google-search-feature",
+    "description": "In order to ensure that Google Search works\r\nI want to run a quick Hello World search.",
+    "name": "Google Search Feature",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "google-search-feature;hello-world-scenario",
+        "description": "",
+        "name": "Hello World Scenario",
+        "keyword": "Scenario",
+        "line": 5,
+        "steps": [
+          {
+            "result": {
+              "duration": 19072802753,
+              "status": "passed"
+            },
+            "name": "The search is Hello World",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "GoogleSearchFeature.The_search_is_Hello_World()"
+            }
+          },
+          {
+            "result": {
+              "duration": 18555044,
+              "status": "failed",
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027btnG\u0027]\"}\nCommand duration or timeout: 11 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.34.0\u0027, revision: \u002711cd0ef93615408e0b6b3bfa28defe125906461a\u0027, time: \u00272013-08-06 11:43:14\u0027\nSystem info: os.name: \u0027Windows 7\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.1\u0027, java.version: \u00271.7.0_17\u0027\nSession ID: 221f178a-694d-414b-8b8e-c2060c05add4\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{platform\u003dXP, databaseEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, javascriptEnabled\u003dtrue, acceptSslCerts\u003dtrue, handlesAlerts\u003dtrue, browserName\u003dfirefox, browserConnectionEnabled\u003dtrue, nativeEvents\u003dtrue, webStorageEnabled\u003dtrue, rotatable\u003dfalse, locationContextEnabled\u003dtrue, applicationCacheEnabled\u003dtrue, takesScreenshot\u003dtrue, version\u003d24.0}]\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:525)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:344)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)\r\n\tat cucumberdemo.GoogleSearchFeature.The_Search_is_performed(GoogleSearchFeature.java:30)\r\n\tat ✽.When The Search is performed(cucumberdemo/GoogleSearch.feature:7)\r\nCaused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027btnG\u0027]\"}\nBuild info: version: \u00272.34.0\u0027, revision: \u002711cd0ef93615408e0b6b3bfa28defe125906461a\u0027, time: \u00272013-08-06 11:43:14\u0027\nSystem info: os.name: \u0027Windows 7\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.1\u0027, java.version: \u00271.7.0_17\u0027\nDriver info: driver.version: unknown\r\n\tat \u003canonymous class\u003e.FirefoxDriver.prototype.findElementInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8879)\r\n\tat \u003canonymous class\u003e.FirefoxDriver.prototype.findElement(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8888)\r\n\tat \u003canonymous class\u003e.DelayedCommand.prototype.executeInternal_/h(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10816)\r\n\tat \u003canonymous class\u003e.DelayedCommand.prototype.executeInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10821)\r\n\tat \u003canonymous class\u003e.DelayedCommand.prototype.execute/\u003c(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10763)\r\n"
+            },
+            "name": "The Search is performed",
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "GoogleSearchFeature.The_Search_is_performed()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "The browser title should have Hello World",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "location": "GoogleSearchFeature.The_browser_title_should_have_Hello_World()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "cucumberdemo/GoogleSearch.feature"
+  }
+]

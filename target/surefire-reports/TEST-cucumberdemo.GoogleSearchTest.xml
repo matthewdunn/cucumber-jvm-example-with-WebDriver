@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.014" errors="2" skipped="1" tests="4" name="cucumberdemo.GoogleSearchTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\jdk1.7.0_17\jre\bin"/>
+    <property name="java.vm.version" value="23.7-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\cygwin\home\matthew.dunn\mobileWebTest"/>
+    <property name="java.runtime.version" value="1.7.0_17-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\jdk1.7.0_17\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\cygwin\tmp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\DevTools\apache-maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\jdk1.7.0_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\cygwin\usr\local\bin;C:\cygwin\bin;C:\jdk1.7.0_17\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\TortoiseSVN\bin;C:\DevTools\apache-maven\bin;C:\DevTools\apache-ant-1.8.4\bin;C:\Program Files (x86)\scala\bin;C:\DevTools\sikuli-libs;C:\HashiCorp\Vagrant\bin;C:\DevTools\adt-bundle-windows-x86-20130917\sdk\platform-tools;C:\Ruby200\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\matthew.dunn"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="matthew.dunn"/>
+    <property name="java.class.path" value="C:\DevTools\apache-maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\jdk1.7.0_17\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean integration-test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_17"/>
+    <property name="java.ext.dirs" value="C:\jdk1.7.0_17\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\jdk1.7.0_17\jre\lib\resources.jar;C:\jdk1.7.0_17\jre\lib\rt.jar;C:\jdk1.7.0_17\jre\lib\sunrsasign.jar;C:\jdk1.7.0_17\jre\lib\jsse.jar;C:\jdk1.7.0_17\jre\lib\jce.jar;C:\jdk1.7.0_17\jre\lib\charsets.jar;C:\jdk1.7.0_17\jre\lib\jfr.jar;C:\jdk1.7.0_17\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\DevTools\apache-maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.001" classname="Scenario: Hello World Scenario" name="Given The search is Hello World"/>
+  <testcase time="0.004" classname="Scenario: Hello World Scenario" name="When The Search is performed">
+    <error message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Session ID: 221f178a-694d-414b-8b8e-c2060c05add4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Session ID: 221f178a-694d-414b-8b8e-c2060c05add4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at cucumberdemo.GoogleSearchFeature.The_Search_is_performed(GoogleSearchFeature.java:30)
+	at ✽.When The Search is performed(cucumberdemo/GoogleSearch.feature:7)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8879)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8888)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10816)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10821)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10763)
+</error>
+  </testcase>
+  <testcase time="0.004" classname="Scenario: Hello World Scenario" name="Scenario: Hello World Scenario">
+    <error message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Session ID: 221f178a-694d-414b-8b8e-c2060c05add4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Session ID: 221f178a-694d-414b-8b8e-c2060c05add4
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at cucumberdemo.GoogleSearchFeature.The_Search_is_performed(GoogleSearchFeature.java:30)
+	at ✽.When The Search is performed(cucumberdemo/GoogleSearch.feature:7)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8879)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8888)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10816)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10821)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10763)
+</error>
+  </testcase>
+  <testcase time="0.005" classname="Scenario: Hello World Scenario" name="Then The browser title should have Hello World">
+    <skipped/>
+  </testcase>
+</testsuite>
