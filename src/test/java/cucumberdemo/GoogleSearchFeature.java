@@ -2,12 +2,21 @@ package cucumberdemo;
 
 
 
+import java.io.File;
+import java.net.URL;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.remote.Augmenter;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import cucumber.api.PendingException;
 import cucumber.api.Scenario;
@@ -24,7 +33,7 @@ public class GoogleSearchFeature{
 
 	WebDriver driver;
 	private Scenario scenario;
-	private Scenario result;
+	
 	
 	@Before
 	public void before(Scenario scenario) {
@@ -35,21 +44,21 @@ public class GoogleSearchFeature{
 	
 	@Given("^The search is Hello World$")
 	public void The_search_is_Hello_World() throws Throwable {
-		driver = new FirefoxDriver();//new AndroidDriver(); //new HtmlUnitDriver();
+		driver =  getWebDriver();//new AndroidDriver(); //new HtmlUnitDriver();
         driver.get("http://www.google.co.uk");
+        
+      
         driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Hello World");
         
-        scenario.write("img - 1");
-        byte[] screenshot = ((FirefoxDriver) driver).getScreenshotAs(OutputType.BYTES);
-		scenario.embed(screenshot, "image/png");
+        
+        captureScreenshot("img 1", (RemoteWebDriver) driver);
 	}
 	
 	@When("^The Search is performed$")
 	public void The_Search_is_performed() throws Throwable {
 		driver.findElement(By.name("btnG")).click(); 
 		
-		byte[] screenshot = ((FirefoxDriver) driver).getScreenshotAs(OutputType.BYTES);
-		scenario.embed(screenshot, "image/png");
+		 captureScreenshot("img 2", (RemoteWebDriver) driver);
 		
 	}
 	
@@ -58,20 +67,51 @@ public class GoogleSearchFeature{
 		System.err.println("driver title = "+driver.getTitle());
 		assertThat ("Browser title:",driver.getTitle(), containsString("Hello World"));
 		
-		byte[] screenshot = ((FirefoxDriver) driver).getScreenshotAs(OutputType.BYTES);
-		scenario.embed(screenshot, "image/png");
-        
-		
-		driver.quit();
+	   captureScreenshot("img 3", (RemoteWebDriver) driver);
+	   driver.quit();
 	}
 	
 	@After
 	public void embedScreenshot(Scenario scenario) {
-	    if(result.isFailed()) {
+	    if(scenario.isFailed()) {
 	        byte[] screenshot = ((FirefoxDriver) driver).getScreenshotAs(OutputType.BYTES);
 	        scenario.embed(screenshot, "image/png");
 	    }
 	}
+	
+	
+	private void captureScreenshot(String comment, RemoteWebDriver driver){
+
+		WebDriver webDriver = driver;
+		webDriver = new Augmenter().augment(webDriver);
+		byte[] screenshot = ((TakesScreenshot) webDriver)
+				.getScreenshotAs(OutputType.BYTES);
+		scenario.write(comment);
+		scenario.embed(screenshot, "image/png");		
+		
+	}
+	
+	private WebDriver getWebDriver() throws Exception {
+		
+		//		WebDriver driver = new AndroidDriver();
+				
+			
+				//			WebDriver driver = new RemoteWebDriver(
+			//	                new URL("http://localhost:8080/wd/hub"), 
+			//	                DesiredCapabilities.chrome());
+			//			
+				// We could use any driver for our tests...
+				DesiredCapabilities chrome = DesiredCapabilities.chrome();
+				// ... but only if it supports javascript
+				chrome.setJavascriptEnabled(true);
+				// Get a handle to the driver. This will throw an exception
+				// if a matching driver cannot be located
+				driver = new RemoteWebDriver(new URL("http://localhost:8080/wd/hub"), chrome);
+				// Query the driver to find out more information			
+				Capabilities actualCapabilities = ((RemoteWebDriver) driver).getCapabilities();
+				System.err.println(actualCapabilities.getBrowserName());
+				return driver;
+		}
 	
 	
 }

@@ -7,7 +7,7 @@ formatter.feature({
   "line": 1
 });
 formatter.before({
-  "duration": 72791,
+  "duration": 73793,
   "status": "passed"
 });
 formatter.scenario({
@@ -36,26 +36,32 @@ formatter.step({
 formatter.match({
   "location": "GoogleSearchFeature.The_search_is_Hello_World()"
 });
-formatter.write("img - 1");
+formatter.write("img 1");
 formatter.embedding("image/png", "embedded0.png");
 formatter.result({
-  "duration": 14620633663,
+  "duration": 7278886283,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchFeature.The_Search_is_performed()"
 });
+formatter.write("img 2");
 formatter.embedding("image/png", "embedded1.png");
 formatter.result({
-  "duration": 1286657231,
+  "duration": 2273383212,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchFeature.The_browser_title_should_have_Hello_World()"
 });
+formatter.write("img 3");
 formatter.embedding("image/png", "embedded2.png");
 formatter.result({
-  "duration": 2115057300,
+  "duration": 661211344,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 43407,
   "status": "passed"
 });
 });
