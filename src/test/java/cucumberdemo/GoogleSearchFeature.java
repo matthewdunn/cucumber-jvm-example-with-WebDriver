@@ -27,7 +27,7 @@ public class GoogleSearchFeature{
 	
 	@When("^The Search is performed$")
 	public void The_Search_is_performed() throws Throwable {
-		driver.findElement(By.xpath("//input[@name='btnG']")).click(); 
+		driver.findElement(By.name("btnG")).click(); 
 	}
 	
 	@Then("^The browser title should have Hello World$")

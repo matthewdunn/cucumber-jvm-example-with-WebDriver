@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.014" errors="2" skipped="1" tests="4" name="cucumberdemo.GoogleSearchTest">
+<testsuite failures="2" time="0.009" errors="0" skipped="0" tests="4" name="cucumberdemo.GoogleSearchTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\jdk1.7.0_17\jre\bin"/>
@@ -61,87 +61,27 @@
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
   <testcase time="0.001" classname="Scenario: Hello World Scenario" name="Given The search is Hello World"/>
-  <testcase time="0.004" classname="Scenario: Hello World Scenario" name="When The Search is performed">
-    <error message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
-Command duration or timeout: 11 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Session ID: 221f178a-694d-414b-8b8e-c2060c05add4
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
-Command duration or timeout: 11 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Session ID: 221f178a-694d-414b-8b8e-c2060c05add4
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at cucumberdemo.GoogleSearchFeature.The_Search_is_performed(GoogleSearchFeature.java:30)
-	at ✽.When The Search is performed(cucumberdemo/GoogleSearch.feature:7)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
-Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8879)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8888)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10816)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10821)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10763)
-</error>
+  <testcase time="0" classname="Scenario: Hello World Scenario" name="When The Search is performed"/>
+  <testcase time="0.004" classname="Scenario: Hello World Scenario" name="Then The browser title should have Hello World">
+    <failure message="Browser title:
+Expected: a string containing &quot;Hello World&quot;
+     but: was &quot;Google&quot;" type="java.lang.AssertionError">java.lang.AssertionError: Browser title:
+Expected: a string containing &quot;Hello World&quot;
+     but: was &quot;Google&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at cucumberdemo.GoogleSearchFeature.The_browser_title_should_have_Hello_World(GoogleSearchFeature.java:35)
+	at ✽.Then The browser title should have Hello World(cucumberdemo/GoogleSearch.feature:8)
+</failure>
   </testcase>
   <testcase time="0.004" classname="Scenario: Hello World Scenario" name="Scenario: Hello World Scenario">
-    <error message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
-Command duration or timeout: 11 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Session ID: 221f178a-694d-414b-8b8e-c2060c05add4
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
-Command duration or timeout: 11 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Session ID: 221f178a-694d-414b-8b8e-c2060c05add4
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:344)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
-	at cucumberdemo.GoogleSearchFeature.The_Search_is_performed(GoogleSearchFeature.java:30)
-	at ✽.When The Search is performed(cucumberdemo/GoogleSearch.feature:7)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;btnG&apos;]&quot;}
-Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef93615408e0b6b3bfa28defe125906461a&apos;, time: &apos;2013-08-06 11:43:14&apos;
-System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8879)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8888)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10816)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10821)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/cygwin/tmp/anonymous5010044925052888846webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10763)
-</error>
-  </testcase>
-  <testcase time="0.005" classname="Scenario: Hello World Scenario" name="Then The browser title should have Hello World">
-    <skipped/>
+    <failure message="Browser title:
+Expected: a string containing &quot;Hello World&quot;
+     but: was &quot;Google&quot;" type="java.lang.AssertionError">java.lang.AssertionError: Browser title:
+Expected: a string containing &quot;Hello World&quot;
+     but: was &quot;Google&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at cucumberdemo.GoogleSearchFeature.The_browser_title_should_have_Hello_World(GoogleSearchFeature.java:35)
+	at ✽.Then The browser title should have Hello World(cucumberdemo/GoogleSearch.feature:8)
+</failure>
   </testcase>
 </testsuite>
