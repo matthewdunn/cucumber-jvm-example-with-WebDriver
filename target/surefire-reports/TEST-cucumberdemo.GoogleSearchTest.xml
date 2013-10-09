@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="2" time="0.009" errors="0" skipped="0" tests="4" name="cucumberdemo.GoogleSearchTest">
+<testsuite failures="0" time="0.002" errors="0" skipped="0" tests="4" name="cucumberdemo.GoogleSearchTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\jdk1.7.0_17\jre\bin"/>
@@ -62,26 +62,6 @@
   </properties>
   <testcase time="0.001" classname="Scenario: Hello World Scenario" name="Given The search is Hello World"/>
   <testcase time="0" classname="Scenario: Hello World Scenario" name="When The Search is performed"/>
-  <testcase time="0.004" classname="Scenario: Hello World Scenario" name="Then The browser title should have Hello World">
-    <failure message="Browser title:
-Expected: a string containing &quot;Hello World&quot;
-     but: was &quot;Google&quot;" type="java.lang.AssertionError">java.lang.AssertionError: Browser title:
-Expected: a string containing &quot;Hello World&quot;
-     but: was &quot;Google&quot;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at cucumberdemo.GoogleSearchFeature.The_browser_title_should_have_Hello_World(GoogleSearchFeature.java:35)
-	at ✽.Then The browser title should have Hello World(cucumberdemo/GoogleSearch.feature:8)
-</failure>
-  </testcase>
-  <testcase time="0.004" classname="Scenario: Hello World Scenario" name="Scenario: Hello World Scenario">
-    <failure message="Browser title:
-Expected: a string containing &quot;Hello World&quot;
-     but: was &quot;Google&quot;" type="java.lang.AssertionError">java.lang.AssertionError: Browser title:
-Expected: a string containing &quot;Hello World&quot;
-     but: was &quot;Google&quot;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at cucumberdemo.GoogleSearchFeature.The_browser_title_should_have_Hello_World(GoogleSearchFeature.java:35)
-	at ✽.Then The browser title should have Hello World(cucumberdemo/GoogleSearch.feature:8)
-</failure>
-  </testcase>
+  <testcase time="0" classname="Scenario: Hello World Scenario" name="Then The browser title should have Hello World"/>
+  <testcase time="0.001" classname="Scenario: Hello World Scenario" name="Scenario: Hello World Scenario"/>
 </testsuite>
