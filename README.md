@@ -18,3 +18,15 @@ Starting: Intent { act=android.intent.action.MAIN cmp=org.openqa.selenium.androi
 
 
 adb -s c161fa07c18c660 forward tcp:8080 tcp:8080
+
+
+
+
+<b>To setup remotedriver server on pc</b>
+https://code.google.com/p/selenium/wiki/RemoteWebDriverServer
+java -jar selenium-server-standalone-{VERSION}.jar -timeout=20 -browserTimeout=60
+
+
+
+Selenium grid could allow us to run same tests in parallel against different browsers devices?
+
